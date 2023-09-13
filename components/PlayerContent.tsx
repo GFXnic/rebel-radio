@@ -25,7 +25,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
 }) => {
   const player = usePlayer();
   const [volume, setVolume] = useState(0.4);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const Icon = isPlaying ? BsPauseFill : BsPlayFill;
   const VolumeIcon = volume === 0 ? HiSpeakerXMark : HiSpeakerWave;
@@ -66,7 +66,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
       volume: volume,
       onplay: () => setIsPlaying(true),
       onend: () => {
-        setIsPlaying(false);
+        setIsPlaying(true);
         onPlayNext();
       },
       onpause: () => setIsPlaying(false),
