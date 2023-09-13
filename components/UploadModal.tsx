@@ -155,9 +155,6 @@ const UploadModal = () => {
           />
         </div>
         <div>
-          <div className="pb-1">
-            Select an image
-          </div>
         
           
         </div>
