@@ -66,7 +66,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
       volume: volume,
       onplay: () => setIsPlaying(true),
       onend: () => {
-        setIsPlaying(true);
+        setIsPlaying(false);
         onPlayNext();
       },
       onpause: () => setIsPlaying(false),

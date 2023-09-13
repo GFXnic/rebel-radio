@@ -158,14 +158,8 @@ const UploadModal = () => {
           <div className="pb-1">
             Select an image
           </div>
-          <Input
-            placeholder="test" 
-            disabled={isLoading}
-            type="file"
-            accept="image/*"
-            id="image"
-            {...register('image', { required: true })}
-          />
+        
+          
         </div>
         <Button disabled={isLoading} type="submit">
           Create
